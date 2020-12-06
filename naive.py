@@ -1,20 +1,18 @@
-def naiveMatching(pat, txt): 
-    n = len(txt) 
-    m = len(pat) 
+def naiveMatching(pat, txt):
+    n = len(txt)
+    m = len(pat)
     ind = []
 
-    for i in range(n - m + 1): 
-        j = 0
-        while(j < m): 
-            if (txt[i + j] != pat[j]): 
-                break
-            j += 1
-  
-        if (j == m):  
-            ind.append(i)
+    if m > n:
+        print("Error: Given string length exceeds length of text to search in")
+
+    else:
+        for i in range(n - m + 1):
+            found = True
+            for j in range(m):
+                if txt[i + j] != pat[j]:
+                    found = False
+                #  break
+            if found:
+                ind.append(i)
     return ind
-
-print(naiveMatching('AABA','AABAACAADAABAABA'))
-
-# O(m*(n-m))
-
