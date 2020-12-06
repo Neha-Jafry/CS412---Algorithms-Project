@@ -45,31 +45,24 @@ print("Case 1: No Match")
 timeAnalysis(pat, txt)
 print("_______________________________")
 
+
 ''' ---------- Case 2 ----------
-        No Matches For First Character of Pattern'''
+        Multiple Matches'''
 txt = "the quick brown fox jumped over the lazy dog." * 200000
-pat = "power"
-print("Case 2: No Matches For First Character of Pattern")
+pat = "over"
+print("Case 2: Multiple Matches")
 timeAnalysis(pat, txt)
 print("_______________________________")
 
 ''' ---------- Case 3 ----------
-        Multiple Matches'''
-txt = "the quick brown fox jumped over the lazy dog." * 200000
-pat = "over"
-print("Case 3: Multiple Matches")
+        Many Matches'''
+txt = "A" * 200000
+pat = "AAA"
+print("Case 3: many Matches")
 timeAnalysis(pat, txt)
 print("_______________________________")
 
 ''' ---------- Case 4 ----------
-        Many Matches'''
-txt = "A" * 200000
-pat = "AAA"
-print("Case 4: many Matches")
-timeAnalysis(pat, txt)
-print("_______________________________")
-
-''' ---------- Case 5 ----------
         Real World Example'''
 txt = '''One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. 
 Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an. Use off agreeable law unwilling sir deficient curiosity instantly. Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share least. 
@@ -83,6 +76,6 @@ Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent
 Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who favour why ham. 
 '''
 pat = 'way'
-print("Case 5: Real World Example")
+print("Case 4: Real World Example")
 timeAnalysis(pat, txt)
 print("_______________________________")
